@@ -161,7 +161,7 @@ header {
   background-color: #fff;
   position: relative;
   width: 100%;
-  margin-bottom: 7%;
+  margin-bottom: 3%;
   z-index: 999;
 }
 img {
@@ -527,30 +527,42 @@ ul {
  *
 /*******************************  $Pricing  ********************************/
 .pricing {
-  padding: 0 0 100px 0;
+  padding: 5% 0 8%;
 }
 .pricing h4 {
   color: #cdcdcd;
 }
 .pricing h2 {
   color: #fff;
+  font-size: 100px;
+  font-weight: 600;
+  letter-spacing: -2px;
+  margin-bottom: 8%;
+}
+.pricing .col-1{
+  margin-bottom: 20px;
 }
 .pricing .pricing-item {
-  color: #fff;
+  color: #fff;  
+  font-size: 16px;
   padding: 30px;
 }
 .pricing .pricing-item .price {
-  font-weight: 900;
-  font-size: 4.3em;
+  font-weight: 800;
+  font-size: 72px;
+  min-height: 102px;
   letter-spacing: 3px;
 }
-.pricing .pricing-item .price small {
-  font-size: 0.6em;
-  position: relative;
-  top: -25px;
+.pricing .free .price{
+  font-size: 44px;
+  text-transform: uppercase;
+}
+.pricing .pricing-item .price span {
+  font-size: 36px;
 }
 .pricing .pricing-item strong {
-  font-size: 1.2em;
+  font-size: 18px;
+  font-weight: 600;
   margin: 10px 0;
   display: block;
 }
@@ -793,8 +805,11 @@ ul {
  *
  *
 /********************************  $Topics  ********************************/
+#about{
+  padding-top: 100px;
+}
 .topics {
-  padding-bottom: 7%;
+  padding-bottom: 3%;
 }
 .topics h2{
   font-size: 100px;
@@ -845,6 +860,7 @@ ul {
 .partner {
   text-align: center;
   padding-bottom: 150px;
+  padding-top: 100px;
 }
 .partner .partner-item {
   width: 270px;
@@ -857,7 +873,8 @@ ul {
  *
 /*******************************  $Speakers  *******************************/
 .speakers, .partners{
-  margin-bottom: 7%;
+  margin-bottom: 3%;
+  padding-top: 100px;
 }
 .speakers h2{
   font-size: 100px;
@@ -989,7 +1006,9 @@ ul {
 }
 
 /*******************************  $Partners  ********************************/
-.partners h2{
+.partners h2,
+.program h2,
+#partner h2{
   font-size: 100px;
   font-weight: 600;
   letter-spacing: -2px;
@@ -1008,14 +1027,15 @@ ul {
   width: 100%;
 }
 
-/*******************************  $Participants  ********************************/
-
 /**
  *
  *
 /*******************************  $Program  ********************************/
 .program {
-  padding: 50px 0 100px 0;
+  padding: 100px 0 0;
+}
+.program h2{
+  margin-bottom: 6%;
 }
 .program h3 {
   color: #000;
@@ -1210,6 +1230,7 @@ ul {
 .program .program-tab-item:last-child:before {
   display: none;
 }
+
 /**
  *
  *
@@ -1227,6 +1248,41 @@ ul {
 }
 .registration h2 {
   color: #fff;
+}
+
+/*****************************  $Contacts  *****************************/
+.contacts{
+  background: #000;
+  color: #fff;
+  font-size: 24px;
+  line-height: 38px;
+  padding: 5% 0;
+}
+.contacts h2{
+  font-size: 100px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: -2px;
+  margin-bottom: 8%;
+}
+.contacts .col{
+  width: 50%;
+  float: left;
+  padding: 30px 0;
+}
+.contacts .left-col{
+  border-right: 2px solid #fff;
+  padding-right: 10%;
+}
+.contacts .right-col{
+  padding-left: 10%;
+}
+.contacts .right-col a{
+  display: inline-block;
+  color: #fff;
+}
+.contacts .right-col a:hover{
+  color: #2e8529;
 }
 /**
  *

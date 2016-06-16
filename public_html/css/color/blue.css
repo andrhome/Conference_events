@@ -6,8 +6,8 @@ footer .social a:hover {
 .btn {
   background-color: #009fe3;
   border: 2px solid #009fe3;
-  -webkit-box-shadow: 0 -2px 0 #0a54c2;
-  box-shadow: 0 -2px 0 #0a54c2;
+  -webkit-box-shadow: 0 -2px 0 #007fb6;
+  box-shadow: 0 -2px 0 #007fb6;
 }
 .btn:active,
 .btn:focus,
@@ -84,7 +84,7 @@ footer .social a:hover {
   color: #009fe3;
 }
 .pricing .pricing-item {
-  border: 7px solid #86b4f9;
+  border: 7px solid #80cff1;
 }
 .btn-pricing:hover span,
 .btn-pricing:focus span {

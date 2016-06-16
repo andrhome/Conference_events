@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<!-- Define Charset -->
 	<meta charset="utf-8"/>
@@ -99,12 +99,12 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse">
 				<ul class="nav navbar-nav menu-effect">	
-					<li class="active"><a href="#home">О выставке</a></li>
-					<li><a href="#">посетителям</a></li>
-					<li><a href="#">участникам</a></li>
+					<li class="active"><a href="#about">О выставке</a></li>
+					<li><a href="#visitors">посетителям</a></li>
+					<li><a href="#participants">участникам</a></li>
 					<li><a href="#program">программа</a></li>
-					<li><a href="#">контакты</a></li>
-					<li><a href="#">организаторы</a></li>
+					<li><a href="#contacts">контакты</a></li>
+					<li><a href="#organizers">организаторы</a></li>
 					<li><a href="#partner">партнеры</a></li>
 				</ul>
 			</div><!--/.nav-collapse -->
@@ -125,7 +125,7 @@
 <section>
 
 	<!-- begin Topics -->
-	<article class="topics" id="topics">
+	<article class="topics" id="about">
 		<div class="container">
 			<div class="animated" data-animation="lightSpeedIn" data-animation-delay="200">
 				<h2>О выставке</h2>
@@ -189,7 +189,7 @@
 	<!-- end Topics -->
 
 	<!-- begin Speakers -->
-	<article class="speakers" id="speakers">
+	<article class="speakers" id="visitors">
 		<h2>Посетителям</h2>		
 		<div class="animated clearfix" data-animation="fadeIn" data-animation-delay="200">
 			<figure class="speakers-item">
@@ -240,7 +240,7 @@
 	</article>
 	<!-- end Speakers -->
 
-	<div class="partners animated clearfix" data-animation="fadeIn" data-animation-delay="200">
+	<div id="organizers" class="partners animated clearfix" data-animation="fadeIn" data-animation-delay="200">
 		<h2>Организаторы<br> и <br>Партнеры</h2>
 		<div class="partners-list">
 			<div class="item">
@@ -265,7 +265,7 @@
 	</div>
 
 	<!-- begin participants -->
-	<article class="participants speakers">
+	<article id="participants" class="participants speakers">
 		<h2>Участникам</h2>		
 		<div class="animated clearfix" data-animation="fadeIn" data-animation-delay="200">
 			<figure class="speakers-item">
@@ -318,421 +318,135 @@
 
 	<!-- begin Program -->
 	<article class="program" id="program">
-	<div class="container">
-		<h4>See what you can do that day</h4>
-		<h2>The Program</h2>
+		<div class="container">
+			<h2>Программа</h2>		
+			<!-- Nav tabs -->
+			<a href="downloads/01.pdf" class="btn"><i class="icon-doc-text"></i>Скачать расписание</a>
+			<ul class="nav nav-tabs animated" data-animation="flipInX" data-animation-delay="400" role="tablist">
+				<li class="active"><a href="#program-day1" role="tab" data-toggle="tab">День 1 <em> 02  Сентября 2016</em></a></li>
+				<li><a href="#program-day2" role="tab" data-toggle="tab">День 2 <em> 03 Сентября 2016</em></a></li>
+				<li><a href="#program-day3" role="tab" data-toggle="tab">День 3 <em> 04 Сентября 2016</em></a></li>
+			</ul>
 
-		<div class="panel-group animated" data-animation="fadeInDown" data-animation-delay="1000" id="program-accordion">
-			<div class="panel">
-				<div class="panel-heading">
-					<h4 class="panel-title">
-						<a data-toggle="collapse" data-parent="#program-accordion" href="#day1">
-							<i class="icon-calendar"></i> Day 1 <small> - 15 June 2018</small><i class="icon-plus-circled"></i>
-						</a>
-					</h4>
-				</div>
-				<div id="day1" class="panel-collapse collapse in">
-					<div class="panel-body">
-					<div class="program-accordion-item clearfix">
+			<!-- Tab panes -->
+			<div class="tab-content animated" data-animation="bounceInUp" data-animation-delay="600">
+				<div class="tab-pane active" id="program-day1">
+					<div class="program-tab-item clearfix">
 						<figure>
 							<img src="img/people/person01.jpg" alt="//">
-							<figcaption>
-								<span><i class="icon-clock"></i>10:30</span>
-								<span><i class="icon-user"></i>Designer</span>
-							</figcaption>
 						</figure>
+						<span><i class="icon-clock"></i>2:20 PM</span>
 						<h3>Starting your own business</h3>
 						<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. </p>
-						<div class="foot">
-							<div class="name"><i class="icon-mic"></i>Mike Smithson</div>
-							<div class="pro">Designer at Montra</div>
-							<div class="links">
-								<a href="#"><i class="icon-gplus"></i></a>
-								<a href="#"><i class="icon-twitter"></i></a>
-								<a href="#"><i class="icon-facebook"></i></a>
-								<a href="#"><i class="icon-linkedin"></i></a>
-							</div>
-						</div>
 					</div>
-					
-					<div class="program-accordion-item clearfix">
+
+					<div class="program-tab-item clearfix">
 						<figure>
 							<img src="img/people/person02.jpg" alt="//">
-							<figcaption>
-								<span><i class="icon-clock"></i>10:30</span>
-								<span><i class="icon-user"></i>Designer</span>
-							</figcaption>
 						</figure>
+						<span><i class="icon-clock"></i>2:20 PM</span>
 						<h3>Starting your own business</h3>
-						<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.</p>
-						<div class="foot">
-							<div class="name"><i class="icon-mic"></i>Mike Smithson</div>
-							<div class="pro">Designer at Montra</div>
-							<div class="links">
-								<a href="#"><i class="icon-gplus"></i></a>
-								<a href="#"><i class="icon-twitter"></i></a>
-								<a href="#"><i class="icon-facebook"></i></a>
-								<a href="#"><i class="icon-linkedin"></i></a>
-							</div>
-						</div>
+						<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. </p>
 					</div>
-					</div>
-				</div>
-			</div>
-			<div class="panel">
-				<div class="panel-heading">
-					<h4 class="panel-title">
-						<a data-toggle="collapse" data-parent="#program-accordion" href="#day2">
-							<i class="icon-calendar"></i> Day 2 <small> - 04 July 2018</small><i class="icon-plus-circled"></i>
-						</a>
-					</h4>
-				</div>
-				<div id="day2" class="panel-collapse collapse">
-					<div class="panel-body">
-					<div class="program-accordion-item clearfix">
-						
+
+					<div class="program-tab-item clearfix">
 						<figure>
 							<img src="img/people/person03.jpg" alt="//">
-							<figcaption>
-								<span><i class="icon-clock"></i>10:30</span>
-								<span><i class="icon-user"></i>Designer</span>
-							</figcaption>
 						</figure>
+						<span><i class="icon-clock"></i>2:20 PM</span>
 						<h3>Starting your own business</h3>
 						<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. </p>
-						<div class="foot">
-							<div class="name"><i class="icon-mic"></i>Mike Smithson</div>
-							<div class="pro">Designer at Montra</div>
-							<div class="links">
-								<a href="#"><i class="icon-gplus"></i></a>
-								<a href="#"><i class="icon-twitter"></i></a>
-								<a href="#"><i class="icon-facebook"></i></a>
-								<a href="#"><i class="icon-linkedin"></i></a>
-							</div>
-						</div>
-					</div>
-					<div class="program-accordion-item clearfix">
-						
-						<figure>
-							<img src="img/people/person04.jpg" alt="//">
-							<figcaption>
-								<span><i class="icon-clock"></i>10:30</span>
-								<span><i class="icon-user"></i>Designer</span>
-							</figcaption>
-						</figure>
-						<h3>Starting your own business</h3>
-						<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. </p>
-						<div class="foot">
-							<div class="name"><i class="icon-mic"></i>Mike Smithson</div>
-							<div class="pro">Designer at Montra</div>
-							<div class="links">
-								<a href="#"><i class="icon-gplus"></i></a>
-								<a href="#"><i class="icon-twitter"></i></a>
-								<a href="#"><i class="icon-facebook"></i></a>
-								<a href="#"><i class="icon-linkedin"></i></a>
-							</div>
-						</div>
-					</div>
 					</div>
 				</div>
-			</div>
-			<div class="panel">
-				<div class="panel-heading">
-					<h4 class="panel-title">
-						<a data-toggle="collapse" data-parent="#program-accordion" href="#day3">
-							<i class="icon-calendar"></i> Day 3 <small> - 10 July 2018</small><i class="icon-plus-circled"></i>
-						</a>
-					</h4>
-				</div>
-				<div id="day3" class="panel-collapse collapse">
-					<div class="panel-body">
-					<div class="program-accordion-item clearfix">
-						
+				<div class="tab-pane" id="program-day2">
+					<div class="program-tab-item clearfix">
 						<figure>
 							<img src="img/people/person04.jpg" alt="//">
-							<figcaption>
-								<span><i class="icon-clock"></i>10:30</span>
-								<span><i class="icon-user"></i>Designer</span>
-							</figcaption>
 						</figure>
-						<h3>Starting your own business</h3>
+						<span><i class="icon-clock"></i>2:20 PM</span>
+						<h3>2. Starting your own business</h3>
 						<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. </p>
-						<div class="foot">
-							<div class="name"><i class="icon-mic"></i>Mike Smithson</div>
-							<div class="pro">Designer at Montra</div>
-							<div class="links">
-								<a href="#"><i class="icon-gplus"></i></a>
-								<a href="#"><i class="icon-twitter"></i></a>
-								<a href="#"><i class="icon-facebook"></i></a>
-								<a href="#"><i class="icon-linkedin"></i></a>
-							</div>
-						</div>
 					</div>
-					<div class="program-accordion-item clearfix">
-						
+
+					<div class="program-tab-item clearfix">
 						<figure>
 							<img src="img/people/person05.jpg" alt="//">
-							<figcaption>
-								<span><i class="icon-clock"></i>10:30</span>
-								<span><i class="icon-user"></i>Designer</span>
-							</figcaption>
 						</figure>
+						<span><i class="icon-clock"></i>2:20 PM</span>
 						<h3>Starting your own business</h3>
 						<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. </p>
-						<div class="foot">
-							<div class="name"><i class="icon-mic"></i>Mike Smithson</div>
-							<div class="pro">Designer at Montra</div>
-							<div class="links">
-								<a href="#"><i class="icon-gplus"></i></a>
-								<a href="#"><i class="icon-twitter"></i></a>
-								<a href="#"><i class="icon-facebook"></i></a>
-								<a href="#"><i class="icon-linkedin"></i></a>
-							</div>
-						</div>
 					</div>
+
+					<div class="program-tab-item clearfix">
+						<figure>
+							<img src="img/people/person01.jpg" alt="//">
+						</figure>
+						<span><i class="icon-clock"></i>2:20 PM</span>
+						<h3>Starting your own business</h3>
+						<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. </p>
 					</div>
-			</div>
-			</div>
-		</div>
-
-
-
-		<!-- Nav tabs -->
-		<a href="downloads/01.pdf" class="btn"><i class="icon-doc-text"></i>Download Schedule</a>
-		<ul class="nav nav-tabs animated" data-animation="flipInX" data-animation-delay="400" role="tablist">
-			<li class="active"><a href="#program-day1" role="tab" data-toggle="tab">Day 1 <em>15 june 2018</em></a></li>
-			<li><a href="#program-day2" role="tab" data-toggle="tab">Day 2 <em>15 june 2018</em></a></li>
-			<li><a href="#program-day3" role="tab" data-toggle="tab">Day 3 <em>15 june 2018</em></a></li>
-		</ul>
-
-		<!-- Tab panes -->
-		<div class="tab-content animated" data-animation="bounceInUp" data-animation-delay="600">
-			<div class="tab-pane active" id="program-day1">
-				<div class="program-tab-item clearfix">
-					<figure>
-						<img src="img/people/person01.jpg" alt="//">
-					</figure>
-					<span><i class="icon-clock"></i>2:20 PM</span>
-					<h3>Starting your own business</h3>
-					<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. </p>
 				</div>
+				<div class="tab-pane" id="program-day3">
+					<div class="program-tab-item clearfix">
+						<figure>
+							<img src="img/people/person02.jpg" alt="//">
+						</figure>
+						<span><i class="icon-clock"></i>2:20 PM</span>
+						<h3>3. Starting your own business</h3>
+						<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. </p>
+					</div>
 
-				<div class="program-tab-item clearfix">
-					<figure>
-						<img src="img/people/person02.jpg" alt="//">
-					</figure>
-					<span><i class="icon-clock"></i>2:20 PM</span>
-					<h3>Starting your own business</h3>
-					<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. </p>
-				</div>
+					<div class="program-tab-item clearfix">
+						<figure>
+							<img src="img/people/person03.jpg" alt="//">
+						</figure>
+						<span><i class="icon-clock"></i>2:20 PM</span>
+						<h3>Starting your own business</h3>
+						<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. </p>
+					</div>
 
-				<div class="program-tab-item clearfix">
-					<figure>
-						<img src="img/people/person03.jpg" alt="//">
-					</figure>
-					<span><i class="icon-clock"></i>2:20 PM</span>
-					<h3>Starting your own business</h3>
-					<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. </p>
-				</div>
-			</div>
-			<div class="tab-pane" id="program-day2">
-				<div class="program-tab-item clearfix">
-					<figure>
-						<img src="img/people/person04.jpg" alt="//">
-					</figure>
-					<span><i class="icon-clock"></i>2:20 PM</span>
-					<h3>2. Starting your own business</h3>
-					<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. </p>
-				</div>
-
-				<div class="program-tab-item clearfix">
-					<figure>
-						<img src="img/people/person05.jpg" alt="//">
-					</figure>
-					<span><i class="icon-clock"></i>2:20 PM</span>
-					<h3>Starting your own business</h3>
-					<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. </p>
-				</div>
-
-				<div class="program-tab-item clearfix">
-					<figure>
-						<img src="img/people/person01.jpg" alt="//">
-					</figure>
-					<span><i class="icon-clock"></i>2:20 PM</span>
-					<h3>Starting your own business</h3>
-					<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. </p>
-				</div>
-			</div>
-			<div class="tab-pane" id="program-day3">
-				<div class="program-tab-item clearfix">
-					<figure>
-						<img src="img/people/person02.jpg" alt="//">
-					</figure>
-					<span><i class="icon-clock"></i>2:20 PM</span>
-					<h3>3. Starting your own business</h3>
-					<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. </p>
-				</div>
-
-				<div class="program-tab-item clearfix">
-					<figure>
-						<img src="img/people/person03.jpg" alt="//">
-					</figure>
-					<span><i class="icon-clock"></i>2:20 PM</span>
-					<h3>Starting your own business</h3>
-					<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. </p>
-				</div>
-
-				<div class="program-tab-item clearfix">
-					<figure>
-						<img src="img/people/person04.jpg" alt="//">
-					</figure>
-					<span><i class="icon-clock"></i>2:20 PM</span>
-					<h3>Starting your own business</h3>
-					<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. </p>
+					<div class="program-tab-item clearfix">
+						<figure>
+							<img src="img/people/person04.jpg" alt="//">
+						</figure>
+						<span><i class="icon-clock"></i>2:20 PM</span>
+						<h3>Starting your own business</h3>
+						<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. </p>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 	</article>
 	<!-- end Program -->
 
-
-
-
-	<!-- begin Testimonials -->
-	<article class="testimonials parallax" id="testimonials" data-speed="6">
-	<div class="container">
-		<div id="owl-testimonials" class="owl-carousel animated" data-animation="bounceInRight" data-animation-delay="200" >
-			<div class="item">
-				<figure><img src="img/testimonials/person01.jpg" alt="//"></figure>
-				<p>&quot;Awesome support, awesome work and great design! We couldn't ask for more from the great folks. Awesome support, awesome.&quot;</p>
-				<div class="author clearfix">
-					<i class="icon-chat"></i>
-					<h5>Lisa Beck</h5>
-					<em>Creative Systems, Founder</em>
-				</div>
-			</div>
-
-			<div class="item">
-				<figure><img src="img/testimonials/person02.jpg" alt="//"></figure>
-				<p>&quot;2Awesome support, awesome work and great design! We couldn't ask for more from the great folks. Awesome support, awesome.&quot;</p>
-				<div class="author clearfix">
-					<i class="icon-chat"></i>
-					<h5>Lisa Beck</h5>
-					<em>Creative Systems, Founder</em>
-				</div>
-			</div>
-
-			<div class="item">
-				<figure><img src="img/testimonials/person03.jpg" alt="//"></figure>
-				<p>&quot;3Awesome support, awesome work and great design! We couldn't ask for more from the great folks. Awesome support, awesome.&quot;</p>
-				<div class="author clearfix">
-					<i class="icon-chat"></i>
-					<h5>Lisa Beck</h5>
-					<em>Creative Systems, Founder</em>
-				</div>
-			</div>
-		</div>
-	</div>
-	</article>
-	<!-- end Testimonials -->
-
-
-
-	<!-- begin Patner -->
+	<!-- begin Partner -->
 	<article class="partner animated" data-animation="fadeInUp" data-animation-delay="600" id="partner">
-	<div class="container">
-		<h4>thanks to our sponsors</h4>
-		<h2>Patner Logos</h2>
-		
-		<div class="owl-carousel" id="owl-partner">
-			<figure class="partner-item">
-				<img src="img/partners/partner1.png" alt="//">
-			</figure>
-
-			<figure class="partner-item">
-				<img src="img/partners/partner2.png" alt="//">
-			</figure>
-
-			<figure class="partner-item">
-				<img src="img/partners/partner3.png" alt="//">
-			</figure>
-
-			<figure class="partner-item">
-				<img src="img/partners/partner4.png" alt="//">
-			</figure>
-
-			<figure class="partner-item">
-				<img src="img/partners/partner1.png" alt="//">
-			</figure>
-
-			<figure class="partner-item">
-				<img src="img/partners/partner3.png" alt="//">
-			</figure>
-
-			<figure class="partner-item">
-				<img src="img/partners/partner4.png" alt="//">
-			</figure>
-
-			<figure class="partner-item">
-				<img src="img/partners/partner1.png" alt="//">
-			</figure>
-
-			<figure class="partner-item">
-				<img src="img/partners/partner2.png" alt="//">
-			</figure>
-
-			<figure class="partner-item">
-				<img src="img/partners/partner3.png" alt="//">
-			</figure>
-
-					<figure class="partner-item">
-				<img src="img/partners/partner4.png" alt="//">
-			</figure>
-
-			<figure class="partner-item">
-				<img src="img/partners/partner2.png" alt="//">
-			</figure>
+		<div class="container">
+			<h2>Информационные<br> Партнеры</h2>			
+			<a class="btn" href="#"><i class="icon-thumbs-up"></i>стать партнером</a>
 		</div>
-
-		<a class="btn" href="#"><i class="icon-thumbs-up"></i>Become a Sponsor</a>
-	</div>
 	</article>
-	<!-- end Gallery -->
-
+	<!-- end Partner -->
 
 	<!-- begin Pricing -->
 	<article class="pricing separator" id="pricing">
 	<div class="container">
-		<h4>We have a ticket for you</h4>
-		<h2>Pricing Tables</h2>
+		<h2>Стоимость входа</h2>
 		<div class="row">
-		<div class="col-sm-4">
-			<div class="pricing-item animated" data-animation="pulse" data-animation-delay="400">
-				<div class="price"><small>$</small>29</div>
-				<strong>Standard Ticket /event</strong>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ratione, in iste error excepturi illum.</p>
-				<a href="#" class="btn-pricing"><span data-hover="Buy Ticket">Buy Ticket</span></a>
+			<div class="col-md-5 col-md-offset-1 col-1">
+				<div class="pricing-item animated" data-animation="pulse" data-animation-delay="400">
+					<div class="price">15 <span>грн</span></div>
+					<strong>Для взрослых</strong>
+					<p>Вход платный и по пригласительным.</p>
+				</div>
 			</div>
-		</div>
-
-		<div class="col-sm-4">
-			<div class="pricing-item animated" data-animation="pulse" data-animation-delay="800">
-				<div class="price"><small>$</small>39</div>
-				<strong>Premium Ticket /event</strong>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ratione, in iste error excepturi illum.</p>
-				<a href="#" class="btn-pricing"><span data-hover="Buy Ticket">Buy Ticket</span></a>
+			<div class="col-md-5 free">
+				<div class="pricing-item animated" data-animation="pulse" data-animation-delay="400">
+					<div class="price">Бесплатно</div>
+					<strong>Для детей</strong>
+					<p>До 14 лет вход бесплатный!</p>
+				</div>
 			</div>
-		</div>
-
-		<div class="col-sm-4">
-			<div class="pricing-item animated" data-animation="pulse" data-animation-delay="1200">
-				<div class="price"><small>$</small>59</div>
-				<strong>Gold Ticket /event</strong>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ratione, in iste error excepturi illum.</p>
-				<a href="#" class="btn-pricing"><span data-hover="Buy Ticket">Buy Ticket</span></a>
-			</div>
-		</div>
 		</div>
 	</div>
 	</article>
@@ -750,62 +464,67 @@
 
 	<!-- begin Registration -->
 	<article class="registration" id="registration">
-	<div class="container animated" data-animation="flipInY" data-animation-delay="400">
-		<h4>Do not miss the chance to get the best place</h4>
-		<h2>Registration</h2>
+		<div class="container animated" data-animation="flipInY" data-animation-delay="400">
+			<h4>Do not miss the chance to get the best place</h4>
+			<h2>Registration</h2>
 
-		<form class="form-newsletter" role="form" method="POST" action="contact-form.php" data-ajax="1">
-		<div class="row">
-			<div class="col-md-6">
-				<div class="form-group">
-					<label for="registration-name">Name</label>
-					<input name="name" type="text" class="form-control" id="registration-name">
+			<form class="form-newsletter" role="form" method="POST" action="contact-form.php" data-ajax="1">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+						<label for="registration-name">Name</label>
+						<input name="name" type="text" class="form-control" id="registration-name">
+					</div>
+
+					<div class="form-group">
+						<label for="registration-name">Telephone</label>
+						<input name="telephone" type="text" class="form-control" id="registration-telephone">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<label for="registration-email">Email</label>
+						<input name="email" type="email" class="form-control" id="registration-email">
+					</div>
+
+					<label for="registration-price">Extra information</label>
+					<select class="form-control" id="registration-price">
+						<option>Standrd</option>
+						<option>Premium</option>
+						<option>Gold</option>
+					</select>
+
 				</div>
 
-				<div class="form-group">
-					<label for="registration-name">Telephone</label>
-					<input name="telephone" type="text" class="form-control" id="registration-telephone">
+			</div>
+			<div class="row">
+				<div class="col-md-12">			
+					<div class="form-group">
+						<label for="registration-message">Email your Message</label>
+						<textarea name="message" class="form-control" rows="5" id="registration-message"></textarea>
+					</div>
+					
+					<button type="submit" class="btn-register" data-hover="Register Now"><span>Register Now</span></button>
+					<div class="clearfix"></div>
+					
+					<div class="form-response"></div>
 				</div>
 			</div>
-			<div class="col-md-6">
-				<div class="form-group">
-					<label for="registration-email">Email</label>
-					<input name="email" type="email" class="form-control" id="registration-email">
-				</div>
-
-				<label for="registration-price">Extra information</label>
-				<select class="form-control" id="registration-price">
-					<option>Standrd</option>
-					<option>Premium</option>
-					<option>Gold</option>
-				</select>
-
-			</div>
-
+			</form>
 		</div>
-		<div class="row">
-			<div class="col-md-12">			
-				<div class="form-group">
-					<label for="registration-message">Email your Message</label>
-					<textarea name="message" class="form-control" rows="5" id="registration-message"></textarea>
-				</div>
-				
-				<button type="submit" class="btn-register" data-hover="Register Now"><span>Register Now</span></button>
-				<div class="clearfix"></div>
-				
-				<div class="form-response"></div>
-			</div>
-		</div>
-		</form>
-	</div>
 	</article>
 	<!-- end Registration -->
 
+	<div id="contacts" class="contacts">
+		<div class="container">
+			<h2>Контакты</h2>
+			<div class="col left-col">ПО ВОПРОСАМ УЧАСТИЯ И СОТРУДНИЧЕСТВА, СПОНСОРСКИХ ПАКЕТОВ И ИНФОРМАЦИОННОГО СОТРУДНИЧЕСТВА ОБРАЩАЙТЕСЬ:</div>
+			<div class="col right-col">Людмила Михайленко, pr-менеджер,<br> тел.: +38 (050) 088 78 59, e-mail: <a href="mailto:aquaterrashow@mail.ru">aquaterrashow@mail.ru</a></div>
+		</div>
+	</div>
 
 </section>
 <!-- end Content -->
-
-
 
 	<!-- Footer -->
 	<footer>
@@ -820,10 +539,8 @@
 	</footer>
 	<!-- end Footer --> 
 
-
-
 	<!-- Modal -->
-	<div class="modal fade" id="video-modal" tabindex="-1" role="dialog" aria-hidden="true">
+	<!-- <div class="modal fade" id="video-modal" tabindex="-1" role="dialog" aria-hidden="true">
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content">
 				<div class="modal-body">
@@ -834,9 +551,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
-
-
+	</div> -->
 
 <!-- ******************************************************************** -->
 <!-- ************************* Javascript Files ************************* -->

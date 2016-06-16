@@ -216,16 +216,16 @@
 	/*****************************  $GMaps  ********************************/
 	var map = new GMaps({ 
 		div: '#map', 
-		lat: 48.860093, 
-		lng: 2.294694,
+		lat: 50.4555587,
+		lng: 30.4543286,
 		disableDefaultUI: true,
 		scrollwheel: false,
 	});
 	
 	map.addMarker({ 
-		lat: 48.858093,
-		lng: 2.294694,
-		icon: "img/marker.png"
+		lat: 50.4536348,
+		lng: 30.4583158,
+		icon: "img/map-marker.png"
 	});
 
 
@@ -242,6 +242,6 @@
 	}
 
 	$('.social a').tooltip({placement: 'top'})
-	$('.social a').hover(function() {changeTooltipColorTo('#d91d2b')});
+	$('.social a').hover(function() {changeTooltipColorTo('#009fe3')});
 
 })(jQuery);
