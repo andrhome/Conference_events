@@ -232,9 +232,8 @@ ul {
 }
 .btn i {
   font-size: 1.4em;
-  height: 44px;
-  left: 20px;
-  line-height: 44px;
+  left: 0;
+  line-height: 40px;
   position: absolute;
   text-align: center;
   top: 0;
@@ -454,16 +453,16 @@ ul {
 .navbar .btn {
   margin: 21px 0 21px 0;
   float: right;
+  padding: 9.5px 12px 9.5px 36px;
 }
 /**
  *
  *
 /**************************  $Navbar Navigation  ***************************/
 .navbar-nav {
-  width: 100%;
+  width: 83%;
   display: flex;
   justify-content: space-between;
-  padding-right: 7%;
   margin: 0;
 }
 .navbar-nav>li{
@@ -703,8 +702,7 @@ ul {
 .title-text{
   text-align: center;
 }
-.title-text span{
-  display: block;
+.title-text p{
   font-size: 20px;
   letter-spacing: 1.5px;
   font-weight: 800;
@@ -715,10 +713,24 @@ ul {
 .title-text .title{
   font-size: 40px;
   font-weight: 700;
-  color: #1c171b;
+  color: #888;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
-
+.title i{
+  color: #2e8529;
+  font-style: normal;
+}
+.title span{
+  color: #009fe3;
+}
+.title em{
+  color: #ffed00;
+  font-style: normal;
+}
+.title strong{
+  color: #7e4e24;
+}
 .home .top-bar {
   color: #fff;
   min-height: 130px;
@@ -840,6 +852,7 @@ ul {
   min-height: 75px;
 }
 .topic-item .img-holder object{
+  width: 55px;
   margin: 0 20px 20px 0;
 }
 .topics .topic-item h3 {
@@ -1005,7 +1018,11 @@ ul {
   line-height: normal;
 }
 
+
 /*******************************  $Partners  ********************************/
+.partners{
+  text-align: center;
+}
 .partners h2,
 .program h2,
 #partner h2{
@@ -1014,19 +1031,21 @@ ul {
   letter-spacing: -2px;
   margin-bottom: 4%;
 }
-.partners-list{
-  text-align: center;
+.partners h2{
+  margin-bottom: 3%;
 }
-.partners-list .item{
-  width: 16%;
+.partners .item{
+  width: 130px;
   display: inline-block;
   vertical-align: middle;
   margin: 0 65px 40px;
 }
-.partners-list .item object{
+.partners .item object{
   width: 100%;
 }
-
+.partners .item + h2{
+  margin-top: 2%; 
+}
 /**
  *
  *
@@ -1252,7 +1271,7 @@ ul {
 
 /*****************************  $Contacts  *****************************/
 .contacts{
-  background: #000;
+  background: #009fe3;
   color: #fff;
   font-size: 24px;
   line-height: 38px;
@@ -1304,7 +1323,7 @@ label {
 }
 
 /*******************************Media requests****************************/
-@media screen and (max-width: 1199px) {
+/*@media screen and (max-width: 1199px) {
   .navbar-nav{
     padding-right: 0;
   }
@@ -1313,7 +1332,4 @@ label {
   .navbar-nav{
     display: block;
   }
-  .navbar-nav>li{
-    text-align: right;
-  }
-}
+}*/

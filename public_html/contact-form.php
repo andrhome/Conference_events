@@ -1,20 +1,35 @@
-﻿<?php
+<?php
 
-$to="demo@email.com";/*Your Email*/
+$to="tehnolog_new@mail.ru";/*Your Email*/
 
 $subject="Message from the website";
 
 $date=date("l, F jS, Y");
 $time=date("h:i A");
 
-$type=$_REQUEST['type'];
 $name=$_REQUEST['name'];
 $email=$_REQUEST['email'];
 $message=$_REQUEST['message'];
+$telephone=$_REQUEST['telephone'];
+
 
 $msg  = "";
 $msg .= "Message sent from website on date:  $date, hour: $time.\n";
-$msg .= "Email: $email\n";
+if(isset($name)){
+    $msg .= "Name: $name\n";
+}
+if(isset($email)){
+    $msg .= "Email: $email\n";
+}
+if(isset($telephone)){
+    $msg .= "Telephone: $telephone\n";
+}
+if(isset($message)){
+    $msg .= "Message: $message\n";
+}
+
+
+//$msg .= "Email: $email\n";
 		
 
 if($name == "") {
@@ -29,7 +44,7 @@ if($name == "") {
 		<strong>Warning!</strong> Please fill the Email field.
 	</div>";
 
-} else if($message == "" && $type == 'contact') {
+} else if($message == "") {
 	echo "<div class='alert alert-danger'>
 		<a class='close' data-dismiss='alert'>×</a>
 		<strong>Warning!</strong> Please fill the Message field.
