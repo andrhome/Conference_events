@@ -158,7 +158,8 @@ h6 {
   font-size: 0.875em;
 }
 header {
-  background-color: #fff;
+  background: #fff url(../img/header-bg.png) 0 0 no-repeat;
+  background-size: cover;
   position: relative;
   width: 100%;
   margin-bottom: 3%;
@@ -1025,7 +1026,8 @@ ul {
 }
 .partners h2,
 .program h2,
-#partner h2{
+#partner h2,
+.registration h2{
   font-size: 100px;
   font-weight: 600;
   letter-spacing: -2px;
@@ -1262,13 +1264,61 @@ ul {
  *
 /*****************************  $Registration  *****************************/
 .registration {
-  padding: 0 0 100px 0;
+  padding: 100px 0;
   background-color: #000;
 }
 .registration h2 {
   color: #fff;
 }
-
+.registration input[type='number']::-webkit-outer-spin-button,
+.registration input[type='number']::-webkit-inner-spin-button {
+     display: none; 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+.modal-reg-holder{
+  display: none;
+  z-index: 1000;
+  position: relative;
+}
+.modal-reg{
+  width: 350px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 6px;
+  background: #009fe3;
+  box-shadow: 0 0 73px 12px #000;
+  letter-spacing: 0.5px;
+  padding: 30px;
+  position: fixed;
+  top: 30%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 1001;
+}
+.modal-reg p{
+  color: #fff;
+  margin-bottom: 20px;
+}
+.modal-reg .ok{
+  border: 0;
+  border-radius: 6px;
+  font-size: 14px;
+  padding: 7px 85px;
+  color: #009fe3;
+}
+.modal-reg-holder .overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .7);
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
 /*****************************  $Contacts  *****************************/
 .contacts{
   background: #009fe3;

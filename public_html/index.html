@@ -463,63 +463,57 @@
 		<div class="container">
 			<h2>Контакты</h2>
 			<div class="col left-col">ПО ВОПРОСАМ УЧАСТИЯ И СОТРУДНИЧЕСТВА, СПОНСОРСКИХ ПАКЕТОВ И ИНФОРМАЦИОННОГО СОТРУДНИЧЕСТВА ОБРАЩАЙТЕСЬ:</div>
-			<div class="col right-col">Людмила Михайленко, pr-менеджер,<br> тел.: +38 (050) 088 78 59, e-mail: <a href="mailto:aquaterrashow@mail.ru">aquaterrashow@mail.ru</a></div>
+			<div class="col right-col">Людмила Михайленко, pr-менеджер,<br> тел.: +38 (050) 088 78 59, e-mail: <a href="mailto:aquaterrashow@gmail.com">aquaterrashow@gmail.com</a></div>
 		</div>
 	</div>
 
 	<!-- begin Registration -->
 	<article class="registration" id="registration">
 		<div class="container animated" data-animation="flipInY" data-animation-delay="400">
-			<h4>Do not miss the chance to get the best place</h4>
-			<h2>Registration</h2>
-
+			<h2>Регистрация</h2>
 			<form class="form-newsletter" role="form" method="POST" action="contact-form.php" data-ajax="1">
-			<div class="row">
-				<div class="col-md-6">
-					<div class="form-group">
-						<label for="registration-name">Name</label>
-						<input name="name" type="text" class="form-control" id="registration-name">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<label for="registration-name">Имя</label>
+							<input name="name" type="text" class="form-control" id="registration-name">
+						</div>
+						<div class="form-group">
+							<label for="registration-email">Email</label>
+							<input name="email" type="email" class="form-control" id="registration-email">
+						</div>
 					</div>
-
-					<div class="form-group">
-						<label for="registration-name">Telephone</label>
-						<input name="telephone" type="text" class="form-control" id="registration-telephone">
+					<div class="col-md-6">
+						<div class="form-group">
+							<label for="registration-telephone">Телефон</label>
+							<input name="telephone" type="number" class="form-control" id="registration-telephone">
+						</div>
+						<div class="form-group">
+							<label for="registration-company">Компания</label>
+							<input name="company" type="text" class="form-control" id="registration-company">
+						</div>
 					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="form-group">
-						<label for="registration-email">Email</label>
-						<input name="email" type="email" class="form-control" id="registration-email">
-					</div>
-
-					<label for="registration-price">Extra information</label>
-					<select class="form-control" id="registration-price">
-						<option>Standrd</option>
-						<option>Premium</option>
-						<option>Gold</option>
-					</select>
 
 				</div>
-
-			</div>
-			<div class="row">
-				<div class="col-md-12">			
-					<div class="form-group">
-						<label for="registration-message">Email your Message</label>
-						<textarea name="message" class="form-control" rows="5" id="registration-message"></textarea>
+				<div class="row">
+					<div class="col-md-12">						
+						<button type="submit" class="btn-register" data-hover="Зарегистрироваться"><span>Зарегистрироваться</span></button>
+						<div class="clearfix"></div>
 					</div>
-					
-					<button type="submit" class="btn-register" data-hover="Register Now"><span>Register Now</span></button>
-					<div class="clearfix"></div>
-					
-					<div class="form-response"></div>
 				</div>
-			</div>
+				<div class="form-response"></div>
 			</form>
 		</div>
 	</article>
 	<!-- end Registration -->
 </section>
+<div class='modal-reg-holder'>
+    <div class='modal-reg'>
+        <p>Спасибо за регистрацию!<br> В ближайшее время с Вами свяжется наш менеджер.</p>
+        <button type='button' class='ok'>ОК</button>
+    </div>
+    <div class='overlay'></div>
+</div>
 <!-- end Content -->
 
 	<!-- Footer -->

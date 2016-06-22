@@ -1,6 +1,6 @@
 <?php
 
-$to="tehnolog_new@mail.ru";/*Your Email*/
+$to="tehnolog_new@mail.ru";/*Your Email aquaterrashow@gmail.com*/
 
 $subject="Message from the website";
 
@@ -9,25 +9,24 @@ $time=date("h:i A");
 
 $name=$_REQUEST['name'];
 $email=$_REQUEST['email'];
-$message=$_REQUEST['message'];
 $telephone=$_REQUEST['telephone'];
+$company=$_REQUEST['company'];
 
 
 $msg  = "";
-$msg .= "Message sent from website on date:  $date, hour: $time.\n";
+$msg .= "Сообщение отправлено:  $date, hour: $time.\n";
 if(isset($name)){
-    $msg .= "Name: $name\n";
+    $msg .= "Имя: $name\n";
 }
 if(isset($email)){
     $msg .= "Email: $email\n";
 }
 if(isset($telephone)){
-    $msg .= "Telephone: $telephone\n";
+    $msg .= "Телефон: $telephone\n";
 }
-if(isset($message)){
-    $msg .= "Message: $message\n";
+if(isset($company)){
+    $msg .= "Компания: $company\n";
 }
-
 
 //$msg .= "Email: $email\n";
 		
@@ -35,27 +34,31 @@ if(isset($message)){
 if($name == "") {
 	echo "<div class='alert alert-danger'>
 		<a class='close' data-dismiss='alert'>×</a>
-		<strong>Warning!</strong> Please fill the Name field.
+		<strong>ВНИМАНИЕ!</strong> Пожалуйста, заполните поле Имя.
 	</div>";
 
 } else if($email=="") {
 	echo "<div class='alert alert-danger'>
 		<a class='close' data-dismiss='alert'>×</a>
-		<strong>Warning!</strong> Please fill the Email field.
+		<strong>ВНИМАНИЕ!</strong> Пожалуйста, заполните поле Email.
 	</div>";
 
-} else if($message == "") {
+} else if($telephone == "") {
 	echo "<div class='alert alert-danger'>
 		<a class='close' data-dismiss='alert'>×</a>
-		<strong>Warning!</strong> Please fill the Message field.
+		<strong>ВНИМАНИЕ!</strong> Пожалуйста, заполните поле Телефон.
+	</div>";
+
+} else if($company == "") {
+	echo "<div class='alert alert-danger'>
+		<a class='close' data-dismiss='alert'>×</a>
+		<strong>ВНИМАНИЕ!</strong> Пожалуйста, заполните поле Компания.
 	</div>";
 
 } else {
-	mail($to,$subject,$msg,"From:".$email);
-	echo "<div class='alert alert-success'>
-		<a class='close' data-dismiss='alert'>×</a>
-		<strong>Thank you!</strong>
-	</div>";
+	if(mail($to,$subject,$msg,"From:".$email)) {
+	echo "1";
+	}
 }
 
 ?>

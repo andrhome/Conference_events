@@ -156,7 +156,7 @@
 
 	function sendData(url, method, data, $form, callback){
 		var $btn = $form.find('[type=submit]'),
-			$response = $form.find('.form-response');
+			$response = $('.form-response');
 
 		$.ajax({
 			beforeSend: function(objeto){ 
@@ -164,7 +164,14 @@
 			},
 			complete: function(objeto, exito){ },
 			data: data,
-			success: function(dat){  callback(dat, $response); },
+			success: function(dat){  
+				// callback(dat, $response);
+				if(dat == 1) {
+					$('.modal-reg-holder').css('display', 'block')
+				} else{
+					$response.html(dat);
+				}
+			},
 			type: method,
 			url: url,
 		});
@@ -245,3 +252,11 @@
 	$('.social a').hover(function() {changeTooltipColorTo('#009fe3')});
 
 })(jQuery);
+
+$(document).ready(function() {
+	/***************************  $Show Modal Registration  ****************************/
+	$('.modal-reg .ok').click(function() {
+		$('.modal-reg-holder').css('display', 'none');
+		$('.form-newsletter')[0].reset();
+	});
+});
