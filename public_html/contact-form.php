@@ -1,8 +1,8 @@
 <?php
 
-$to="tehnolog_new@mail.ru";/*Your Email aquaterrashow@gmail.com*/
+$to="aquaterrashow@gmail.com";/*Your Email*/
 
-$subject="Message from the website";
+$subject="Сообщение из веб-сайта aquaterrashow.com.ua";
 
 $date=date("l, F jS, Y");
 $time=date("h:i A");

@@ -176,7 +176,7 @@ embed {
   outline: 0;
 }
 p {
-  color: #5f5f5f;
+  color: #555;
   font-family: 'Open Sans';
   font-size: 0.875em;
   line-height: 1.8em;
@@ -461,7 +461,7 @@ ul {
  *
 /**************************  $Navbar Navigation  ***************************/
 .navbar-nav {
-  width: 83%;
+  width: 95%;
   display: flex;
   justify-content: space-between;
   margin: 0;
@@ -538,6 +538,7 @@ ul {
   font-weight: 600;
   letter-spacing: -2px;
   margin-bottom: 8%;
+  padding-top: 15px;
 }
 .pricing .col-1{
   margin-bottom: 20px;
@@ -696,12 +697,25 @@ ul {
 .logo{
   display: inline-block;
   width: 100%;
+  position: relative;
+}
+.logo:after{
+  content: '';
+  width: 2px;
+  height: 103%;
+  background: #9d9d9c;
+  position: absolute;
+  top: -8px;
+  right: 0;
+  -webkit-transform: rotate(-20deg);
+  transform: rotate(-20deg);
 }
 .logo object{
   width: 90%;
 }
 .title-text{
   text-align: center;
+  padding-top: 4.3%;
 }
 .title-text p{
   font-size: 20px;
@@ -713,24 +727,20 @@ ul {
 }
 .title-text .title{
   font-size: 40px;
+  line-height: 70px;
   font-weight: 700;
   color: #888;
   text-transform: uppercase;
   letter-spacing: 1px;
+  margin-bottom: 32px;
 }
-.title i{
-  color: #2e8529;
-  font-style: normal;
+.title-text .btn{
+  font-size: 17px;
+  padding: 17px 10px 17px 40px;
 }
-.title span{
-  color: #009fe3;
-}
-.title em{
-  color: #ffed00;
-  font-style: normal;
-}
-.title strong{
-  color: #7e4e24;
+.title-text .btn i{
+  top: 8px;
+  left: 3px;
 }
 .home .top-bar {
   color: #fff;
@@ -819,10 +829,7 @@ ul {
  *
 /********************************  $Topics  ********************************/
 #about{
-  padding-top: 100px;
-}
-.topics {
-  padding-bottom: 3%;
+  padding-top: 70px;
 }
 .topics h2{
   font-size: 100px;
@@ -843,9 +850,10 @@ ul {
   margin-bottom: 6%;
 }
 .topics .topic-item {
-  margin-bottom: 4%;
+  min-height: 185px;
+  margin-bottom: 45px;
   position: relative;
-  padding: 0 45px;
+  padding: 0 25px;
 }
 .topic-item .img-holder{
   display: flex;
@@ -854,13 +862,13 @@ ul {
 }
 .topic-item .img-holder object{
   width: 55px;
-  margin: 0 20px 20px 0;
+  margin: 0 20px 7px 0;
 }
 .topics .topic-item h3 {
   font-size: 18px;
   line-height: normal;
   margin-top: 0;
-  color: #000;
+  color: #9d9d9c;
   letter-spacing: 0;
   font-weight: 600;
 }
@@ -881,6 +889,22 @@ ul {
 }
 .partner .btn {
   margin: 30px 0;
+}
+.info-partners-list{
+  text-align: center;
+  margin-bottom: 45px;
+}
+.info-partners-list li{
+  width: 200px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 20px 40px;
+}
+.info-partners-list li.mark{
+  width: 130px;
+}
+.info-partner-list li img{
+  width: 100%;
 }
 /**
  *
@@ -999,7 +1023,7 @@ ul {
   -o-transition: all 0.2s ease-out;
   -ms-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
-  width: 400px;
+  padding: 0 20px;
   z-index: 9;
   color: #fff;
 }
@@ -1101,6 +1125,9 @@ ul {
   margin: 0 30px 30px 30px;
   min-height: 230px;
 }
+.program .program-tab-item>span i {
+  color: #d82132;
+}
 .program .program-accordion-item figure {
   width: 180px;
   height: 230px;
@@ -1161,6 +1188,7 @@ ul {
 .program .btn {
   float: right;
   margin: 10px 0;
+  z-index: 1;
 }
 .program .nav-tabs {
   border: none;
@@ -1256,7 +1284,7 @@ ul {
  *
  *
 /*********************************  $Map  **********************************/
-.map {
+#map {
   height: 335px;
 }
 /**
@@ -1325,7 +1353,7 @@ ul {
   color: #fff;
   font-size: 24px;
   line-height: 38px;
-  padding: 5% 0;
+  padding: 100px 0;
 }
 .contacts h2{
   font-size: 100px;
@@ -1372,14 +1400,4 @@ label {
   margin-top: 20px;
 }
 
-/*******************************Media requests****************************/
-/*@media screen and (max-width: 1199px) {
-  .navbar-nav{
-    padding-right: 0;
-  }
-}
-@media screen and (max-width: 767px) {
-  .navbar-nav{
-    display: block;
-  }
-}*/
+

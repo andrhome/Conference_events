@@ -12,17 +12,28 @@
 /**
  *
  *
-/*****************  $Medium devices (Desktops) <= 1200px  ******************/
-@media handheld, only screen and (max-width: 1200px) {
-  .features .features-item {
-    height: 300px;
-    width: 310px;
+/*****************  $Medium devices (Desktops) <= 1199px  ******************/
+@media screen and (max-width: 1199px) {
+  .title-text .title{
+    font-size: 28px;
+    line-height: 50px;
   }
-  .gallery .gallery-item {
-    width: 220px;
+  .navbar-nav{padding-right: 0;}
+  .home .top-bar i{
+    width: 55px;
+    height: 55px;
+    line-height: 49px;
+    top: 7px;
   }
-  .contact .contact-item {
-    width: 210px;
+  .home .top-bar [class^="col-"]{
+    padding: 0 0 0 65px;
+  }
+  .navbar-nav>li>a {
+    font-size: 13px;
+    margin: 25px 5px;
+  }
+  .topics .topic-item{
+    min-height: 210px;
   }
 }
 /**
@@ -36,7 +47,6 @@
   }
   .topics .topic-item h3 {
     font-size: 1em;
-    padding: 0 0 0 70px;
   }
 
 }
@@ -44,13 +54,37 @@
  *
  *
 /*******************  $Small devices (Tablets) <= 992px  *******************/
-@media handheld, only screen and (max-width: 992px) {
+@media handheld, only screen and (max-width: 991px) {
+  .title-text .title{
+    font-size: 23px;
+    line-height: 35px;
+    margin-bottom: 30px
+  }
+  .title-text .btn {
+    font-size: 13px;
+    padding: 10px 10px 10px 40px;
+  }
+  .title-text .btn i{
+    top: 1px;
+  }
+  #about {
+    padding-top: 40px;
+  }
+  h2{
+    font-size: 68px !important;
+  }
+  .topics h4 {
+    font-size: 24px;
+    margin-bottom: 35px;
+    margin-top: 50px;
+  }
+
   .home .top-bar [class^="col-"] {
-    margin-bottom: 50px;
+    margin-bottom: 18px;
   }
   .navbar-nav>li>a {
-    font-size: 11px;
-    margin: 25px 5px;
+    font-size: 10px;
+    margin: 15px 5px;
   }
   .navbar .btn {
     font-size: 12px;
@@ -67,15 +101,20 @@
     width: auto;
     margin: 0 2%;
   }
+  .speakers, .partners{
+    padding-top: 65px;
+  }
   .program .nav-tabs li a {
     padding: 10px 20px;
   }
   .speakers-item .icons { 
     padding: 0 10%;
   }
+  .speakers h2{
+    margin-bottom: 30px;
+  }
   .speakers-item h3 {
     font-size: 1.2em;
-    margin-top: 1.5em;
   }
   .speakers-item p {
     font-size: .9em;
@@ -85,8 +124,39 @@
 /*
  *
  *
-/****************  $Extra Small devices (Phones) <= 768px  *****************/
-@media handheld, only screen and (max-width: 768px) {
+/****************  $Extra Small devices (Phones) <= 767px  *****************/
+@media handheld, only screen and (max-width: 767px) {
+  .row{
+    margin: 0 !important;
+  }
+  .logo{
+    display: block;
+    width: 45%;
+    margin: 0 auto;
+  } 
+  .logo:after{
+    display: none;
+  }
+  .navbar-nav{
+    display: block;
+  }
+  .navbar-fixed-top .navbar-collapse {
+    max-height: inherit;
+    background-color: #000;
+  }
+  .nav > li{
+    text-align: right;
+  }
+  .topics .topic-item {
+    min-height: auto;
+  }
+  .partners h2 {
+    margin-bottom: 30px;
+  }
+  .partner h2{
+    font-size: 50px !important;
+  }
+
   h1 {
     font-size: 2.7em;
   }
@@ -94,13 +164,11 @@
     font-size: 5em;
     margin-top: 10px;
   }
-  .navbar-collapse {
-    background-color: #000;
-  }
   .navbar-nav {
     float: none;
   }
   .navbar-nav>li>a {
+    font-size: 12px;
     margin: 10px;
   }
   .navbar-nav>li>a:before {
@@ -204,7 +272,6 @@
   }
   .speakers-item h3 {
     font-size: 1.3em;
-    margin-top: 2em;
   }
   .speakers-item h5 {
     font-size: 1em;
@@ -224,6 +291,73 @@
   
   
 }
+
+/*
+ *
+ *
+/****************  $Extra Small devices (Phones) <= 480px  *****************/
+@media handheld, screen and (max-width: 480px) {
+  .logo{
+    width: 65%;
+  }
+  .home .top-header {
+    padding: 20px 0;
+  }
+  .title-text{
+    padding: 20px 30px 0;
+  }
+  .title-text .title {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 10px;
+  }
+  .title-text .btn{
+    font-size: 12px;
+    padding: 0;
+    width: 78%;
+  }
+  .title-text .btn i {
+    top: 0;
+    position: inherit;
+    margin-right: 10px;
+  }
+  .home .top-bar [class^="col-"]{
+    width: 100%;
+    min-height: 55px;
+    float: none;
+    margin-bottom: 20px;
+    padding: 0 0 0 72px;
+  }
+  .home .top-bar [class^="col-"]:last-child{
+    margin-bottom: 9px;
+  }
+  .home .top-bar i{
+    top: -2px;
+  }
+  #about {
+    padding-top: 0;
+  }
+  h2 {
+    font-size: 44px !important;
+  }
+  .partner h2 {
+    font-size: 33px !important;
+  }
+  .topics h4 {
+    font-size: 20px;
+    margin-bottom: 28px;
+    margin-top: 0;
+    letter-spacing: 0;
+  }
+  .topics .info-text{
+    font-size: 18px;
+    margin-bottom: 35px;
+  }
+  .topic-item .img-holder{
+    min-height: auto;
+  }
+}
+
 /*
  *
  *
@@ -240,9 +374,3 @@
   }
 
 }
-
-
-
-
-
-

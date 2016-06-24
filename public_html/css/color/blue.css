@@ -63,9 +63,6 @@ footer .social a:hover {
 .program .tab-pane {
   border: 1px solid #009fe3;
 }
-.program .program-tab-item>span i {
-  color: #009fe3;
-}
 .form-control:focus {
   background-color: #009fe3;
 }

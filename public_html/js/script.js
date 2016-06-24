@@ -164,8 +164,7 @@
 			},
 			complete: function(objeto, exito){ },
 			data: data,
-			success: function(dat){  
-				// callback(dat, $response);
+			success: function(dat){
 				if(dat == 1) {
 					$('.modal-reg-holder').css('display', 'block')
 				} else{
@@ -218,21 +217,6 @@
 			$head.find('.navbar').removeClass('navbar-fixed-top')
 		}
 
-	});
-
-	/*****************************  $GMaps  ********************************/
-	var map = new GMaps({ 
-		div: '#map', 
-		lat: 50.4555587,
-		lng: 30.4543286,
-		disableDefaultUI: true,
-		scrollwheel: false,
-	});
-	
-	map.addMarker({ 
-		lat: 50.4536348,
-		lng: 30.4583158,
-		icon: "img/map-marker.png"
 	});
 
 
